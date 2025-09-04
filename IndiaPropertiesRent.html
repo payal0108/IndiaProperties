@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentalDetails</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .rentBox img {
+      cursor: pointer;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .lightbox img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .lightbox .close, .lightbox .prev, .lightbox .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      user-select: none;
+    }
+    .lightbox .close {
+      top: 20px;
+      right: 30px;
+      transform: none;
+      font-size: 2.5rem;
+    }
+    .lightbox .prev { left: 30px; }
+    .lightbox .next { right: 30px; }
+  </style>
+</head>
+<body>
+    <header id="header">
+        <div class="blue">
+        <pre class="main"><img id="logo" src="indiapropertieslogo.png" style="height: 70px; width: 70px; padding-left:1px;opacity: 100%;">India
+Properties</pre>
+        <div class="details">
+        <a href="/IndiaPropertiesHome.html">Home</a>
+        <a href="indiaPropertiesAbout.html">About</a>
+        <a href="indiaPropertiesContactUs.html">Contact Us</a>
+        </div>
+        </div>    
+    </header>
+    <div class="bg">
+        <div><h2 style="padding: 20px;font-weight:600;font-size:xx-large;">Rental Details</h2></div>
+        <div class="outerbox">
+        <!--box1-->
+        <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p1" data-index="0" >
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        <!--box2-->
+        <div class="rentBox">
+                <img src="4bhkthumb.png" data-gallery="p2" data-index="0">
+                <div class="rentDetail"><p>4 bhk for rent</p>
+                <p>Rent : ₹1,00,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        <!--box3-->
+        <div class="rentBox">
+                <img src="3bhkthumb.jpg" data-gallery="p3" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        <!-- box4
+        <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p4" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        box5
+       <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p5" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        box6
+       <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p6" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent" >Contact us</div></div></a>
+                </div>       
+        </div>
+        box7
+       <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p7" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent">Contact us</div></div></a>
+                </div>       
+        </div>
+        box8
+       <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p8" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹62,000</p>
+                <p>Location: Sector 57, Gurgaon</p
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent" >Contact us</div></div></a>
+                </div>       
+        </div>
+        box9
+       <div class="rentBox">
+                <img src="rent3bhksec57.jpg" data-gallery="p9" data-index="0">
+                <div class="rentDetail"><p>3 bhk for rent</p>
+                <p>Rent : ₹80,000</p>
+                <p>Location: Sector 57, Gurgaon</p>
+                <a href="/indiaPropertiesContactUs.html"><div class="rentContact"style="display: flex;align-items: center;justify-content: center;"><div class="contactRent" >Contact us</div></div></a>
+                </div>       
+        </div> -->
+
+    </div>
+     <br/>
+    </div>
+   
+
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="close">&times;</span>
+        <span class="prev" id="prev">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" id="next">&#10095;</span>
+    </div>
+
+
+    <footer>
+       <div class="footer">
+        <div class="fsub">
+            <a href=""><img id="loc" src="location.png" style="height:30px;width: 30px;"></a>
+            <a href="https://www.facebook.com/arvind.yadav.659619"><img id="fac" src="facebook.png" style="height: 30px;width: 30px;"></a>
+            <a href="https://www.instagram.com/arvindyadav12042023/"><img id="insta" src="instalogo.png" style="height: 30px;width: 30px;""></a>
+        </div>
+        <p class="rights">© 2025 India Properties. All rights reserved.</p>
+       </div> 
+    </footer>
+
+
+    <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.getElementById("close");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    // Galleries for each property
+    const galleries = {
+      "p1": ["rent3bhksec57.jpg", "rent3bhkhall.jpg", "rent3bhkkitchen.jpg", "rent3bhkwashroom1.jpg", "rent3bhkroom.jpg","rent3bhkterrace.jpg","rent3bhkwashroom2.jpg"],
+      "p2": ["rent4bhkhall1.jpg", "rent4bhkhall2.jpg", "rent4bhkkitchen.jpg","rent4bhkroom.jpg","rent4bhkwashroom.jpg","rent4bhkhallwardrobe.jpg","rent4bhkterrace.jpg"],
+      "p3": ["3bhkhall.jpg", "3bhkkitchen.jpg", "3bhkkitchen1.jpg","3bhkwashroom.jpg","3bhkroom.jpg","3bhkwashroom1.jpg"],
+      "p4": ["rent3bhksec57.jpg", "rent3bhksec56_inside1.jpg", "rent3bhksec56_inside2.jpg"],
+      "p5": ["rent3bhksec57.jpg", "rent3bhksec57_inside1.jpg", "rent3bhksec57_inside2.jpg"],
+      "p6": ["rent3bhksec57.jpg", "rent3bhksec56_inside1.jpg", "rent3bhksec56_inside2.jpg"],
+      "p7": ["rent3bhksec57.jpg", "rent3bhksec57_inside1.jpg", "rent3bhksec57_inside2.jpg"],
+      "p8": ["rent3bhksec57.jpg", "rent3bhksec56_inside1.jpg", "rent3bhksec56_inside2.jpg"],
+      "p9": ["rent3bhksec57.jpg", "rent3bhksec57_inside1.jpg", "rent3bhksec57_inside2.jpg"]
+
+    };
+
+    let currentGallery = [];
+    let currentIndex = 0;
+
+    // Open lightbox
+    document.querySelectorAll(".rentBox img").forEach(img => {
+      img.addEventListener("click", () => {
+        const galleryKey = img.getAttribute("data-gallery");
+        currentGallery = galleries[galleryKey];
+        currentIndex = parseInt(img.getAttribute("data-index"));
+        lightbox.style.display = "flex";
+        lightboxImg.src = currentGallery[currentIndex];
+      });
+    });
+
+    // Close
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // Prev
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+      lightboxImg.src = currentGallery[currentIndex];
+    });
+
+    // Next
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % currentGallery.length;
+      lightboxImg.src = currentGallery[currentIndex];
+    });
+
+    // Close on background click
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
