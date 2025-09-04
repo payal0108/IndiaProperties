@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    word-spacing: 5px;
+}
+
+.blue{
+    height: 70px;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    color: rgb(249, 243, 235);
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+a{
+    color: rgb(249, 243, 235);
+    text-decoration: none;
+    padding: 15px;
+}
+footer{
+    font-size: 21px;
+    height: 110px;
+    width: 100vw;
+    color: rgb(249, 243, 235);
+    bottom: 0;
+    background:rgb(0, 0, 0) ;
+    display: flex;
+    flex-direction: column;
+
+}
+.fsub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rights{
+    text-align: center;
+}
+a:hover{
+    color: rgb(255, 208, 79);
+}
+.mainbody{
+    background: #000;
+    height: 600px;
+    width: 100vw ;
+    color: rgb(249, 243, 235);
+    position: relative;
+}
+.mainbody .mainbgText{
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    left: 22%;
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.bg{
+    height: auto;
+    width: 100vw;
+    background-color:rgb(249, 243, 235) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rentBox{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgb(179, 177, 175);
+    border-radius: 12px;
+}
+.rentDetail{
+    text-align: center;
+    padding: 10px;
+}
+.outerbox{
+    height: auto;
+    width: 90vw;
+    overflow: hidden;
+    display: grid;
+    gap:2.5rem;
+    padding: 17px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.rentImage:hover{
+    transform: scale(1.07);   
+    transition: ease-in-out 200ms;
+}
+.rentBox:hover{
+    transform: scale(1.02);
+    box-shadow:0px 0px 10px rgb(186, 175, 161);
+    overflow: hidden;
+    transition: ease-in-out 200ms;
+}
+.rentContact:hover{
+    text-decoration: underline;
+    color: rgb(249, 243, 235);
+}
+#loc:hover{
+    opacity:50%;
+}
+#fac:hover{
+    opacity:50%;
+}
+#insta:hover{
+    opacity:50%;
+}
+.contactBox{
+    height: auto;
+    width: 50vw;
+    background-color: #000;
+    border-radius: 20px;
+    margin: 8vh;
+    overflow: hidden;
+    box-shadow:1px 1px 10px rgb(78, 76, 74);
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    overflow: hidden;
+}
+
+.contactIcons{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(249, 243, 235);
+    padding: 5px;
+}
+.iconsBox{
+    display: flex;
+    flex-direction: column;
+}
+.socialDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    padding-top:10px;
+    align-items: center;
+    justify-content: start;
+}
+.bgContact{
+    height: auto;
+    width: 100vw;
+    background-color:rgb(249, 243, 235) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBox{
+    height: fit-content;
+    width: 50vw;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15vh;
+    border-radius: 20px;
+    box-shadow:1px 1px 10px rgb(78, 76, 74);
+}
+.aboutOut{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 243, 235);
+}
+.contactRent{
+    background-color: black; padding: 10px 15px 10px 15px; width:fit-content ;border-radius:20px; color:rgb(249, 243, 235) ;
+}
+@media (max-width:990px){
+    .indiaPText{
+        font-size: 20px;
+    }
+}
