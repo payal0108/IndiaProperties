@@ -195,8 +195,113 @@ a:hover{
 .contactRent{
     background-color: black; padding: 10px 15px 10px 15px; width:fit-content ;border-radius:20px; color:rgb(249, 243, 235) ;
 }
-@media (max-width:990px){
-    .indiaPText{
-        font-size: 20px;
-    }
+@media (max-width: 700px) {
+
+  #logo {
+    height: 50px ;
+    width: 50px ;
+    margin-bottom: 15px;
+  }
+
+  .main {
+    font-size: 15px;
+  }
+
+  .details a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .mainbody{
+    height: 300px !important;
+  }
+  #mainbg {
+    height: 300px !important;
+  }
+
+  .indiaPText {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  .what{
+    font-size: 25px !important;
+  }
+
+  .options {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .option img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  .option p {
+    font-size: 15px !important;
+  }
+
+  .aboutBox, .contactBox{
+    width: 80vw !important;
+  }
+
+  .aboutBox p, 
+  .contactDetails p {
+    font-size: 15px !important;
+    padding: 0 10px 15px 10px !important;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+
+  .iconsBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Rent Page */
+  .outerbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rentBox {
+    width: 90% !important;
+    margin-bottom: 15px;
+  }
+
+  .rentBox img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .rentDetail {
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .fsub {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .fsub img {
+    height: 25px !important;
+    width: 25px !important;
+  }
+
+  .rights {
+    font-size: 13px !important;
+  }
 }
