@@ -223,11 +223,13 @@ a:hover{
   .indiaPText {
     font-size: 40px !important;
     text-align: center !important;
+    justify-content: center !important;
   }
 
   .what{
     font-size: 25px !important;
     text-align: center !important;
+    justify-content: center !important;
   }
 
   .options {
@@ -312,6 +314,7 @@ a:hover{
     font-size: 13px !important;
   }
 }
+
 
 
 
